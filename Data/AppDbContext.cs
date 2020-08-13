@@ -19,7 +19,7 @@ namespace Data
         {
         }
 
-        public DbSet<Status> Status { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

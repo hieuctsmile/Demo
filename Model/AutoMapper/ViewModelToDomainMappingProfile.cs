@@ -9,10 +9,8 @@ namespace Model.AutoMapper
     {
         public ViewModelToDomainMappingProfile()
         {
-            CreateMap<StatusViewModel, Status>()
-                .ConstructUsing(c => new Status(c.Id, c.Name));
             CreateMap<ProductViewModel, Product>()
-                .ConstructUsing(c => new Product(c.Id, c.Name));
+                .ConstructUsing(c => new Product(c.Id, c.Name));  
         }
     }
 }

@@ -4,11 +4,11 @@ using Model.Shared;
 
 namespace Model.Entites
 {
+    [Table("Product")]
     public class Product : DomainEntity<int>
     {
         public Product()
         {
-
         }
 
         public Product(int id, string name)
@@ -16,6 +16,7 @@ namespace Model.Entites
             Id = id;
             Name = name;
         }
+
         public Product(string name)
         {
             Name = name;

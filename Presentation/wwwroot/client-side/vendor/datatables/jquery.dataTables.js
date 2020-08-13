@@ -4508,7 +4508,7 @@
 			} );
 
 			n
-				.attr( 'role', 'status' )
+				.attr( 'role', 'Product' )
 				.attr( 'aria-live', 'polite' );
 
 			// Table is described by our info div
@@ -14819,7 +14819,7 @@
 	 *  @example
 	 *     // Use a custom property returned from the server in another DOM element
 	 *     $('#table').dataTable().on('xhr.dt', function (e, settings, json) {
-	 *       $('#status').html( json.status );
+	 *       $('#Product').html( json.Product );
 	 *     } );
 	 *
 	 *  @example

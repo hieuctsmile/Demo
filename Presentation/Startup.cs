@@ -42,7 +42,8 @@ namespace Presentation
             //Register Serrvices
             services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
             services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
-            services.AddTransient(typeof(IStatusService), typeof(StatusService));
+
+            services.AddTransient<IProductService, ProductService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
                 // config lại object trả về khi respone trả về cho ajax : https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2
@@ -74,7 +75,7 @@ namespace Presentation
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Login}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

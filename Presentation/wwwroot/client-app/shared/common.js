@@ -112,14 +112,14 @@
         $('.dv-loading')
             .addClass('hide');
     },
-    getStatus: function (status) {
-        if (status == 1)
+    getProduct: function (Product) {
+        if (Product == 1)
             return '<span class="badge bg-green">Kích hoạt</span>';
         else
             return '<span class="badge bg-red">Khoá</span>';
     },
-    getStatus2: function (status) {
-        if (status == 1)
+    getProduct2: function (Product) {
+        if (Product == 1)
             return '<span class="badge bg-green">Seen</span>';
         else
             return '<span class="badge bg-red">New</span>';

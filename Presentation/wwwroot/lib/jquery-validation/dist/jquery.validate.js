@@ -490,7 +490,7 @@
                     }
                     this.showErrors();
 
-                    // Add aria-invalid status for screen readers
+                    // Add aria-invalid Product for screen readers
                     $(element).attr("aria-invalid", !rs);
                 }
 

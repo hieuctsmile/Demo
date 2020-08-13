@@ -8817,8 +8817,8 @@ jQuery.extend( {
 			deferred = jQuery.Deferred(),
 			completeDeferred = jQuery.Callbacks( "once memory" ),
 
-			// Status-dependent callbacks
-			statusCode = s.statusCode || {},
+			// Product-dependent callbacks
+			ProductCode = s.ProductCode || {},
 
 			// Headers (they are sent all at once)
 			requestHeaders = {},
@@ -8871,17 +8871,17 @@ jQuery.extend( {
 					return this;
 				},
 
-				// Status-dependent callbacks
-				statusCode: function( map ) {
+				// Product-dependent callbacks
+				ProductCode: function( map ) {
 					var code;
 					if ( map ) {
 						if ( completed ) {
 							// Execute the appropriate callbacks
-							jqXHR.always( map[ jqXHR.status ] );
+							jqXHR.always( map[ jqXHR.Product ] );
 						} else {
 							// Lazy-add the new callbacks in a way that preserves old ones
 							for ( code in map ) {
-								statusCode[ code ] = [ statusCode[ code ], map[ code ] ];
+								ProductCode[ code ] = [ ProductCode[ code ], map[ code ] ];
 							}
 						}
 					}
@@ -8889,8 +8889,8 @@ jQuery.extend( {
 				},
 
 				// Cancel the request
-				abort: function( statusText ) {
-					var finalText = statusText || strAbort;
+				abort: function( ProductText ) {
+					var finalText = ProductText || strAbort;
 					if ( transport ) {
 						transport.abort( finalText );
 					}
@@ -9082,9 +9082,9 @@ jQuery.extend( {
 		}
 
 		// Callback for when everything is done
-		function done( status, nativeStatusText, responses, headers ) {
+		function done( Product, nativeProductText, responses, headers ) {
 			var isSuccess, success, error, response, modified,
-				statusText = nativeStatusText;
+				ProductText = nativeProductText;
 
 			// Ignore repeat invocations
 			if ( completed ) {
@@ -9106,10 +9106,10 @@ jQuery.extend( {
 			responseHeadersString = headers || "";
 
 			// Set readyState
-			jqXHR.readyState = status > 0 ? 4 : 0;
+			jqXHR.readyState = Product > 0 ? 4 : 0;
 
 			// Determine if successful
-			isSuccess = status >= 200 && status < 300 || status === 304;
+			isSuccess = Product >= 200 && Product < 300 || Product === 304;
 
 			// Get response data
 			if ( responses ) {
@@ -9134,45 +9134,45 @@ jQuery.extend( {
 				}
 
 				// if no content
-				if ( status === 204 || s.type === "HEAD" ) {
-					statusText = "nocontent";
+				if ( Product === 204 || s.type === "HEAD" ) {
+					ProductText = "nocontent";
 
 				// if not modified
-				} else if ( status === 304 ) {
-					statusText = "notmodified";
+				} else if ( Product === 304 ) {
+					ProductText = "notmodified";
 
 				// If we have data, let's convert it
 				} else {
-					statusText = response.state;
+					ProductText = response.state;
 					success = response.data;
 					error = response.error;
 					isSuccess = !error;
 				}
 			} else {
-				// Extract error from statusText and normalize for non-aborts
-				error = statusText;
-				if ( status || !statusText ) {
-					statusText = "error";
-					if ( status < 0 ) {
-						status = 0;
+				// Extract error from ProductText and normalize for non-aborts
+				error = ProductText;
+				if ( Product || !ProductText ) {
+					ProductText = "error";
+					if ( Product < 0 ) {
+						Product = 0;
 					}
 				}
 			}
 
 			// Set data for the fake xhr object
-			jqXHR.status = status;
-			jqXHR.statusText = ( nativeStatusText || statusText ) + "";
+			jqXHR.Product = Product;
+			jqXHR.ProductText = ( nativeProductText || ProductText ) + "";
 
 			// Success/Error
 			if ( isSuccess ) {
-				deferred.resolveWith( callbackContext, [ success, statusText, jqXHR ] );
+				deferred.resolveWith( callbackContext, [ success, ProductText, jqXHR ] );
 			} else {
-				deferred.rejectWith( callbackContext, [ jqXHR, statusText, error ] );
+				deferred.rejectWith( callbackContext, [ jqXHR, ProductText, error ] );
 			}
 
-			// Status-dependent callbacks
-			jqXHR.statusCode( statusCode );
-			statusCode = undefined;
+			// Product-dependent callbacks
+			jqXHR.ProductCode( ProductCode );
+			ProductCode = undefined;
 
 			if ( fireGlobals ) {
 				globalEventContext.trigger( isSuccess ? "ajaxSuccess" : "ajaxError",
@@ -9180,7 +9180,7 @@ jQuery.extend( {
 			}
 
 			// Complete
-			completeDeferred.fireWith( callbackContext, [ jqXHR, statusText ] );
+			completeDeferred.fireWith( callbackContext, [ jqXHR, ProductText ] );
 
 			if ( fireGlobals ) {
 				globalEventContext.trigger( "ajaxComplete", [ jqXHR, s ] );
@@ -9325,8 +9325,8 @@ jQuery.ajaxSettings.xhr = function() {
 	} catch ( e ) {}
 };
 
-var xhrSuccessStatus = {
-		// File protocol always yields status code 0, assume 200
+var xhrSuccessProduct = {
+		// File protocol always yields Product code 0, assume 200
 		0: 200,
 
 		// Support: IE <=9 only
@@ -9396,20 +9396,20 @@ jQuery.ajaxTransport( function( options ) {
 								// Support: IE <=9 only
 								// On a manual native abort, IE9 throws
 								// errors on any property access that is not readyState
-								if ( typeof xhr.status !== "number" ) {
+								if ( typeof xhr.Product !== "number" ) {
 									complete( 0, "error" );
 								} else {
 									complete(
 
-										// File: protocol always yields status 0; see #8605, #14207
-										xhr.status,
-										xhr.statusText
+										// File: protocol always yields Product 0; see #8605, #14207
+										xhr.Product,
+										xhr.ProductText
 									);
 								}
 							} else {
 								complete(
-									xhrSuccessStatus[ xhr.status ] || xhr.status,
-									xhr.statusText,
+									xhrSuccessProduct[ xhr.Product ] || xhr.Product,
+									xhr.ProductText,
 
 									// Support: IE <=9 only
 									// IE9 has no XHR2 but throws on binary (trac-11426)
@@ -9734,12 +9734,12 @@ jQuery.fn.load = function( url, params, callback ) {
 				// Otherwise use the full result
 				responseText );
 
-		// If the request succeeds, this function gets "data", "status", "jqXHR"
+		// If the request succeeds, this function gets "data", "Product", "jqXHR"
 		// but they are ignored because response was set above.
-		// If it fails, this function gets "jqXHR", "status", "error"
-		} ).always( callback && function( jqXHR, status ) {
+		// If it fails, this function gets "jqXHR", "Product", "error"
+		} ).always( callback && function( jqXHR, Product ) {
 			self.each( function() {
-				callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
+				callback.apply( this, response || [ jqXHR.responseText, Product, jqXHR ] );
 			} );
 		} );
 	}

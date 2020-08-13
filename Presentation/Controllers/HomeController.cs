@@ -5,10 +5,16 @@ namespace Presentation.Controllers
 {
     public class HomeController : Controller
     {
-        private IStatusService _statusService;
+        private readonly IProductService _productService;
+
+        public HomeController(IProductService productService)
+        {
+            _productService = productService;
+        }
         public IActionResult Index()
         {
-            return View();
+            var res = _productService.GetAll(10,1);
+            return View(res);
         }
     }
 }
