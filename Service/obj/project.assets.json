@@ -4722,11 +4722,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\HieuTest1\\Service\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Demo1\\Service\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Service\\Services.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Service\\Services.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Service\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Demo1\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4748,11 +4748,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\Data.csproj"
+            "C:\\Users\\admin\\Desktop\\Demo1\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Data\\Data.csproj"
             },
-            "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj"
+            "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj"
             }
           }
         }

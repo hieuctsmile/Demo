@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\HieuTest1\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Demo1\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Common\\Common.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Common\\Common.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Common\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Demo1\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -42,9 +42,13 @@ namespace Services.Implementation
 
         public List<ProductViewModel> GetAll(int pageSize,int page = 1)
         {
-            if(pageSize == null)
+            if(pageSize == null || pageSize == 0)
             {
                 pageSize = 10;
+            }
+            if (page == 0)
+            {
+                page = 1;
             }
             var query = _productRepository.FindAll();
             query = query.Skip((page - 1) * pageSize).Take(pageSize);

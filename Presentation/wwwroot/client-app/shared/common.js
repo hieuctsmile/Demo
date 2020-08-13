@@ -149,7 +149,8 @@
             }
         }
         return roots;
-    }
+    },
+
 }
 // bắt AntiForgeryToken() của Asp.net  Core trên form login khi ajax request được gửi lên
 $(document).ajaxSend(function (e, xhr, options) {

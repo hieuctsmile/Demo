@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Documents\\HieuTest1\\Presentation\\Presentation.csproj": {}
+    "C:\\Users\\admin\\Desktop\\Demo1\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Documents\\HieuTest1\\Common\\Common.csproj": {
+    "C:\\Users\\admin\\Desktop\\Demo1\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\HieuTest1\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Demo1\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Common\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\Demo1\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\Data.csproj": {
+    "C:\\Users\\admin\\Desktop\\Demo1\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Demo1\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\Demo1\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +88,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj"
+              "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj"
               }
             }
           }
@@ -152,14 +152,14 @@
         }
       }
     },
-    "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj": {
+    "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -223,14 +223,14 @@
         }
       }
     },
-    "C:\\Users\\admin\\Documents\\HieuTest1\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\admin\\Desktop\\Demo1\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\HieuTest1\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Demo1\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Presentation\\Presentation.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Presentation\\Presentation.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Presentation\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\Demo1\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -252,17 +252,17 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\admin\\Documents\\HieuTest1\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Common\\Common.csproj"
+              "C:\\Users\\admin\\Desktop\\Demo1\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Common\\Common.csproj"
               },
-              "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\Data.csproj"
+              "C:\\Users\\admin\\Desktop\\Demo1\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Data\\Data.csproj"
               },
-              "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj"
+              "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj"
               },
-              "C:\\Users\\admin\\Documents\\HieuTest1\\Service\\Services.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Service\\Services.csproj"
+              "C:\\Users\\admin\\Desktop\\Demo1\\Service\\Services.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Service\\Services.csproj"
               }
             }
           }
@@ -307,6 +307,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
@@ -321,7 +325,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[2.2.4, )"
             },
             "Serilog.Extensions.Logging.File": {
               "target": "Package",
@@ -336,14 +340,14 @@
         }
       }
     },
-    "C:\\Users\\admin\\Documents\\HieuTest1\\Service\\Services.csproj": {
+    "C:\\Users\\admin\\Desktop\\Demo1\\Service\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\HieuTest1\\Service\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Demo1\\Service\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Service\\Services.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Service\\Services.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Service\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\Demo1\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -365,11 +369,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Data\\Data.csproj"
+              "C:\\Users\\admin\\Desktop\\Demo1\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Data\\Data.csproj"
               },
-              "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\HieuTest1\\Model\\Model.csproj"
+              "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj"
               }
             }
           }

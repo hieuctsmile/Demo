@@ -1,11 +1,12 @@
-﻿@model List<Model.ViewModel.ProductViewModel>
+﻿
+@model List<Presentation.Models.ShoppingCartViewModel>
+<title>Cart Page</title>
 <div class="container-fluid">
-    <title>Menu Page</title>
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
     </div>
-    <a href="Home/Cart">
-        <button id="productCount" class="btn"><i class="fa fa-cart-plus"></i></button>
+    <a href="/">
+        <button class="btn"><i class="fa fa-home"></i></button>
     </a>
     <!-- Content Row -->
     <div class="row">
@@ -14,9 +15,9 @@
             <!-- Approach -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">List Product</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Item in Cart</h6>
+                    <h5 class="m-0 font-weight-bold text-md-right"> Cart has @Model.Count item</h5>
                 </div>
-
                 @if (Model.Any())
                 {
 
@@ -25,7 +26,7 @@
                             <tr>
                                 <th hidden scope="col">ID</th>
                                 <th scope="col">Name</th>
-                                <th scope="col">Description</th>
+                                <th scope="col">Quantity</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -33,25 +34,26 @@
                             @foreach (var item in Model)
                             {
                                 <tr>
-                                    <td hidden>@item.Id</td>
-                                    <td>@item.Name</td>
-                                    <td>@item.Name</td>
+                                    <td hidden>@item.Product.Id</td>
+                                    <td>@item.Product.Name</td>
+                                    <td>@item.Quantity</td>
                                     <td class="text-center">
-                                        <button cart-id="@item.Id" type="button" class="btn btn-light addtocart">Add To Cart</button>
+                                        <button cart-id="@item.Product.Id" type="button" class="btn btn-light removefromcart">Remove To Cart</button>
                                     </td>
                                 </tr>
 
                             }
                         </tbody>
                     </table>
-
-                    <button id="moreItem" type="button" class="btn btn-success view-more">View More</button>
-
+                    @if (Model.Count != 0)
+                    {
+                        <button id="removeall" type="button" class="btn btn-success view-more">Remove All</button>
+                    }
                 }
                 else
                 {
                     <div class="card-body">
-                        <p>Not Found Product</p>
+                        <p>Not Found Product in Cart</p>
                     </div>
                 }
 
@@ -60,38 +62,16 @@
     </div>
 </div>
 
-
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    }
-</script>
-
-
 @section Scripts{
+
     <script>
-        var pageIndex = 2;
-        var pageSize = 10;
         $(document).ready(function () {
-            $('body').on('click', '.view-more,#moreItem', function (e) {
+            $('body').on('click', '.view-more,#removeall', function (e) {
                 e.preventDefault();
                 $.ajax({
                     type: "GET",
-                    url: '/Home/GetAllProduct',
+                    url: '/Home/ClearCart',
                     data: {
-                        page: pageIndex,
-                        pageSize: pageSize
                     },
                     // contentType: "application/json; charset=utf-8",
                     dataType: "json",
@@ -102,33 +82,24 @@
 
                     },
                     error: function (response) {
-                        //sssalert('error');
-                        console.log(response.responseJSON);
-                        $.each(response.responseJSON, function (i, item) { // response.Results lấy ra danh sách
-                            $("#productBinding")
-                                .append(' <tr><td hidden>' + item.Id + '</td><td>' + item.Name + '</td><td>' + item.Name + '</td><td><button cart-id="' + item.Id + '" type="button" class="btn btn-light addtocart">Add To Cart</button></td></tr>');
-                        });
-                        if (response.responseJSON.length < 10) {
-                            $("#moreItem").hide();
-                        }
-                        pageIndex++;
+                        alert('Remove Success !')
+                        setInterval('location.reload()', 1000);
                     }
                 });
             });
         });
 
+
+
         $(document).ready(function () {
-            $('body').on('click', '.addtocart', function (e) {
+            $('body').on('click', '.removefromcart', function (e) {
                 e.preventDefault();
                 var id = $(this).attr("cart-id");
-                console.log(id);
-                var quantity = 1;
                 $.ajax({
                     type: "POST",
-                    url: '/Home/AddToCart',
+                    url: '/Home/RemoveFromCart',
                     data: {
-                        productId: id,
-                        quantity: quantity
+                        productId: id
                     },
                     dataType: "json",
                     success: function (response) {
@@ -137,7 +108,8 @@
 
                     },
                     error: function (response) {
-                        alert("Add Succes !");
+                        alert("Remove Succes !");
+                        setInterval('location.reload()', 1000);
                         var a = response.responseJSON.length;
                         console.log(a);
                         $("#productCount").text(response.responseJSON.length)
@@ -146,6 +118,5 @@
             });
         });
     </script>
+
 }
-
-
