@@ -14,6 +14,17 @@ namespace Services.Implementation
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
+        public List<ProductViewModel> GetAll()
+        {
+            var listStatus = _productRepository.FindAll();
+            return _mapper.ProjectTo<ProductViewModel>(listStatus).ToList(); ;
+        }
+
+        public ProductViewModel GetById(int id)
+        {
+            return _mapper.Map<Product, ProductViewModel>(_productRepository.FindById(id));
+        }
+
         public void SaveChanges()
         {
             _unitOfWork.Commit();

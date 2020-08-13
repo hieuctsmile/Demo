@@ -33,3 +33,12 @@ C:\Users\admin\Documents\Demo1\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInf
 C:\Users\admin\Documents\Demo1\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfo.cs
 C:\Users\admin\Documents\Demo1\Common\obj\Debug\netcoreapp2.2\Common.dll
 C:\Users\admin\Documents\Demo1\Common\obj\Debug\netcoreapp2.2\Common.pdb
+C:\Users\admin\Desktop\Demo1\Common\bin\Debug\netcoreapp2.2\Common.deps.json
+C:\Users\admin\Desktop\Demo1\Common\bin\Debug\netcoreapp2.2\Common.dll
+C:\Users\admin\Desktop\Demo1\Common\bin\Debug\netcoreapp2.2\Common.pdb
+C:\Users\admin\Desktop\Demo1\Common\obj\Debug\netcoreapp2.2\Common.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Demo1\Common\obj\Debug\netcoreapp2.2\Common.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Demo1\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Demo1\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfo.cs
+C:\Users\admin\Desktop\Demo1\Common\obj\Debug\netcoreapp2.2\Common.dll
+C:\Users\admin\Desktop\Demo1\Common\obj\Debug\netcoreapp2.2\Common.pdb

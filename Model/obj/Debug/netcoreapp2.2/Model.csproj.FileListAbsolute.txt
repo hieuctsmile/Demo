@@ -34,3 +34,12 @@ C:\Users\admin\Documents\Demo1\Model\obj\Debug\netcoreapp2.2\Model.AssemblyInfo.
 C:\Users\admin\Documents\Demo1\Model\obj\Debug\netcoreapp2.2\Model.dll
 C:\Users\admin\Documents\Demo1\Model\obj\Debug\netcoreapp2.2\Model.pdb
 C:\Users\admin\Documents\Demo1\Model\obj\Debug\netcoreapp2.2\Model.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Demo1\Model\bin\Debug\netcoreapp2.2\Model.deps.json
+C:\Users\admin\Desktop\Demo1\Model\bin\Debug\netcoreapp2.2\Model.dll
+C:\Users\admin\Desktop\Demo1\Model\bin\Debug\netcoreapp2.2\Model.pdb
+C:\Users\admin\Desktop\Demo1\Model\obj\Debug\netcoreapp2.2\Model.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Demo1\Model\obj\Debug\netcoreapp2.2\Model.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Demo1\Model\obj\Debug\netcoreapp2.2\Model.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Demo1\Model\obj\Debug\netcoreapp2.2\Model.AssemblyInfo.cs
+C:\Users\admin\Desktop\Demo1\Model\obj\Debug\netcoreapp2.2\Model.dll
+C:\Users\admin\Desktop\Demo1\Model\obj\Debug\netcoreapp2.2\Model.pdb

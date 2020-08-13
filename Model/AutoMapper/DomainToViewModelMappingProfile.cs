@@ -9,7 +9,8 @@ namespace Model.AutoMapper
         // setup mapping trực tiếp giữa  các entityViewModel và entityModel
         public DomainToViewModelMappingProfile()
         {
-             CreateMap<Status, StatusViewModel>();
+            CreateMap<Status, StatusViewModel>();
+            CreateMap<Product, ProductViewModel>();
         }
     }
 }

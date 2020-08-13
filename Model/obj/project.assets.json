@@ -4214,11 +4214,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\Demo1\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\admin\\Documents\\Demo1\\Model\\Model.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\Demo1\\Model\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Demo1\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
